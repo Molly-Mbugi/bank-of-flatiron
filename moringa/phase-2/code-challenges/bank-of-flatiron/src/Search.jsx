@@ -1,4 +1,5 @@
 import React from 'react';
+import  './index.css';
 
 function SearchBar({ onSearch }) {
   const handleChange = (event) => {
@@ -7,6 +8,7 @@ function SearchBar({ onSearch }) {
 
   return (
     <input
+    class="search"
       type="text"
       placeholder="Search..."
       onChange={handleChange}

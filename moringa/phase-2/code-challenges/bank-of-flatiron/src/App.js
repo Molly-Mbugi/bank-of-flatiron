@@ -3,7 +3,7 @@ import MyTable from './Table';
 import './App.css';
 import NavBar from './NavBar';
 import AddItemForm from './Form';
-import SearchBar from './Search'; // Import the SearchBar component
+import SearchBar from './Search'; 
 
 const data = [
   { date: '2019-12-01', description: 'Paycheck from Bob\'s Burgers', category: 'Food', amount: 70.00 },

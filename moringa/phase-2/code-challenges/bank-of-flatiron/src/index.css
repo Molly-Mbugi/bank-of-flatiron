@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* searchBarStyles.css */
+.search {
+  border: 3px solid black;
+  font-size: 18px;  
+  font-style: italic; 
+padding: 8px;
+width: 70%;    
+padding: 10px; 
+}
+
+
+
