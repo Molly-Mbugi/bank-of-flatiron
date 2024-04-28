@@ -1,25 +1,29 @@
-import React from 'react';
+import React from 'react'; 
 import './index.css';
 
+// SearchBar functional component
 function SearchBar({ onSearch }) {
+  // Function to handle input change
   const handleChange = (event) => {
+    
     onSearch(event.target.value);
   };
 
+  // Function to handle button click
   const handleButtonClick = () => {
-    // Add logic here to handle button click event, if needed
+  
     console.log('Search button clicked');
   };
 
   return (
-    <div className="search-bar">
+    <div className="search-bar"> 
       <input
-        className="search"
+        className="search" 
         type="text"
         placeholder="Search Transactions"
-        onChange={handleChange}
+        onChange={handleChange} 
       />
-      <button id ="search" className="search-button" onClick={handleButtonClick}>
+      <button id="search" className="search-button" onClick={handleButtonClick}> {/* Button for  search */}
         Search
       </button>
     </div>
@@ -27,5 +31,6 @@ function SearchBar({ onSearch }) {
 }
 
 export default SearchBar;
+
 
 
