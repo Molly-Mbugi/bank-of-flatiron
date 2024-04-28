@@ -18,10 +18,13 @@ function AddItemForm({ onAddItem }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form id="new-item-form" onSubmit={handleSubmit}>
+      <div className="form-inputs">
+     
       <input
-        type="text"
+        type="date"
         placeholder="Date"
+        data-date-inline-picker="true"
         value={date}
         onChange={(e) => setDate(e.target.value)}
         style={{ width: '200px', padding: '10px' }}
@@ -46,8 +49,10 @@ function AddItemForm({ onAddItem }) {
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
         style={{ width: '200px', padding: '10px' }}
-      />
+     />
+     </div>
       <button
+      id="add"
         type="submit"
         style={{ width: '100px', padding: '5px', marginTop: '10px', border: 'none', }}
       >
